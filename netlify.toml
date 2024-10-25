@@ -1,0 +1,16 @@
+[build]
+    publish = "public"
+
+[build.environment]
+    HUGO_VERSION = "0.123.8"
+    NODE_VERSION = "18.18.2"
+    BUILD_WITH_CONTAINER = "0"
+    GO_VERSION = "1.21.3"
+    PYTHON_VERSION = "3.8"
+    RUBY_VERSION = "3.0.6"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "SAMEORIGIN"
+    X-XSS-Protection = "1; mode=block"
